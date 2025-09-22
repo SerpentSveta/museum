@@ -1,3 +1,5 @@
+@use '../abstracts/variables' as *;
+
 h2 {
   font-family: $second-family;
   font-weight: 400;

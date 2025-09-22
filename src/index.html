@@ -11,21 +11,70 @@
 
 <body>
   <header class="header">
-    <a class="logo__link" href="#">
-      <img class="logo__img" src="./assets/logo.svg" alt="Louvre">
-      <h1 class="logo__text">Louvre</h1>
-    </a>
-    <nav class="header__navigaiton">
-      <ul class="menu">
-        <li>Visiting</li>
-        <li>Explore</li>
-        <li>Video</li>
-        <li>Gallery</li>
-        <li>Tickets</li>
-        <li>Contacts</li>
-      </ul>
-    </nav>
+    <div class="wrapper">
+      <a class="logo__link" href="#">
+        <img class="logo__img" src="./assets/logo.svg" alt="Louvre">
+        <h1 class="logo__text">Louvre</h1>
+      </a>
+      <nav class="header__navigaiton">
+        <ul class="menu">
+          <li>Visiting</li>
+          <li>Explore</li>
+          <li>Video</li>
+          <li>Gallery</li>
+          <li>Tickets</li>
+          <li>Contacts</li>
+        </ul>
+      </nav>
+    </div>
   </header>
+  <main>
+    <section class="welcome">
+      <div class="welcome__content">
+        <h2 class="welcome__title">Welcome to the Louvre</h2>
+        <p class="welcome__text">From the castle to the museum</p>
+        <a class="button button_big"
+          href="https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736"
+          target="_blank">Discover the Louvre</a>
+      </div>
+      <div class="slider">
+        <div class="slider__slide slider__slide_active">
+          <img src="./assets/img/welcome-slider/1.jpg" alt="Welcome to the Louvre">
+        </div>
+        <div class="slider__slide">
+          <img src="./assets/img/welcome-slider/2.jpg" alt="Welcome to the Louvre">
+        </div>
+        <div class="slider__slide">
+          <img src="./assets/img/welcome-slider/3.jpg" alt="Welcome to the Louvre">
+        </div>
+        <div class="slider__slide">
+          <img src="./assets/img/welcome-slider/4.jpg" alt="Welcome to the Louvre">
+        </div>
+        <div class="slider__slide">
+          <img src="./assets/img/welcome-slider/5.jpg" alt="Welcome to the Louvre">
+        </div>
+        <div class="slider__controls">
+          <div class="slider__numbers">
+            <span class="slider__current-number">01</span>
+            |
+            <span class="slider__total-number">05</span>
+          </div>
+          <div class="slider__pagination">
+            <div class="slider__control slider__control_active"></div>
+            <div class="slider__control"></div>
+            <div class="slider__control"></div>
+            <div class="slider__control"></div>
+            <div class="slider__control"></div>
+          </div>
+          <div class="slider__arrows">
+            <div class="slider__arrow"><img src="./assets/icons/arrow-left.svg" alt="Arrow Left"></div>
+            <div class="slider__arrow"><img src="./assets/icons/arrow-right.svg" alt="Arrow Right"></div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
 </body>
 
 </html>
