@@ -1,0 +1,10 @@
+@use '../abstracts/variables' as *;
+
+.header {
+  padding: 59px 0 65px;
+  background-color: $color-main-background;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}

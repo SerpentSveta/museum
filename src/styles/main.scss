@@ -1,2 +1,6 @@
 @use './base/normalize';
 @use './base/typography';
+@use './base/global';
+@use './layout/header';
+@use './components/logo';
+@use './components/menu.scss';

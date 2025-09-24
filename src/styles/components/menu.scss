@@ -1,0 +1,10 @@
+@use '../abstracts/variables' as *;
+
+.menu {
+  display: flex;
+  gap: 55px;
+  font-weight: 200;
+  font-size: 22px;
+  letter-spacing: 0.09em;
+  color: $color-accent;
+}

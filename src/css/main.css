@@ -312,4 +312,103 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+h1 {
+  font-family: "Forum", sans-serif;
+  font-size: 28px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+}
+
+h2 {
+  font-family: "Forum", sans-serif;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 112%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  color: hsl(0, 0%, 0%);
+  font-weight: 400;
+  scrollbar-gutter: stable;
+}
+
+.scroll-block {
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 59px 0 65px;
+  background-color: hsl(0, 0%, 1%);
+}
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo__link {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.logo__img {
+  width: 49px;
+  align-self: start;
+}
+
+.menu {
+  display: flex;
+  gap: 55px;
+  font-weight: 200;
+  font-size: 22px;
+  letter-spacing: 0.09em;
+  color: hsl(0, 0%, 100%);
 }/*# sourceMappingURL=main.css.map */
