@@ -1,0 +1,13 @@
+@use '../abstracts/variables' as *;
+
+.link-button {
+  display: inline-block;
+  padding: 25px 64px;
+  font-weight: 300;
+  font-size: 22px;
+  letter-spacing: 0.09em;
+  text-align: center;
+  color: $color-text-light;
+  background-color: $color-secondary;
+  border-radius: 10px;
+}

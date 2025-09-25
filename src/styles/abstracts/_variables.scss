@@ -1,6 +1,11 @@
 $font-family: "Roboto", sans-serif;
 $second-family: "Forum", sans-serif;
 
-$color-base-text: hsl(0, 0%, 0%);
-$color-main-background: hsl(0, 0%, 1%);
-$color-accent: hsl(0, 0%, 100%);
+$color-background-light: hsl(0, 0%, 100%);
+$color-text-dark: hsl(0, 0%, 0%);
+
+$color-background-dark: hsl(0, 0%, 1%);
+$color-text-light: hsl(0, 0%, 100%);
+
+$color-secondary: hsl(0, 88%, 24%);
+$color-pagination: hsl(35, 47%, 67%);

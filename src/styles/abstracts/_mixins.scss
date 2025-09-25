@@ -1,0 +1,10 @@
+@mixin background-slider-welcome($image-url) {
+  background:
+    linear-gradient(
+      90deg,
+      #000000 0%,
+      rgba(0, 0, 0, 0.5) 16.19%,
+      rgba(0, 0, 0, 0) 30.73%
+    ),
+    url($image-url);
+}

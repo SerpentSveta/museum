@@ -1,0 +1,80 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.slider {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  &__images {
+    display: flex;
+    max-width: 5000px;
+  }
+  &__slide {
+    flex: 0 0 100%;
+    display: none;
+    width: 100%;
+    max-width: 1000px;
+    padding-top: 75%;
+    border: 1px solid #000000;
+    background-size: cover;
+    background-position: center;
+    &_1 {
+      @include background-slider-welcome('../assets/img/welcome-slider/1.jpg');
+    }
+    &_2 {
+      @include background-slider-welcome('../assets/img/welcome-slider/2.jpg');
+    }
+    &_3 {
+      @include background-slider-welcome('../assets/img/welcome-slider/3.jpg');
+    }
+    &_4 {
+      @include background-slider-welcome('../assets/img/welcome-slider/4.jpg');
+    }
+    &_5 {
+      @include background-slider-welcome('../assets/img/welcome-slider/5.jpg');
+    }
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    &_active {
+      display: block;
+    }
+  }
+  &__controls {
+    display: flex;
+    align-items: center;
+    align-self: flex-end;
+    gap: 55px;
+    max-width: 600px;
+    margin-top: -60px;
+    padding: 40px 74px;
+    background-color: $color-background-dark;
+    color: $color-text-light;
+  }
+  &__numbers {
+    display: flex;
+    gap: 10px;
+    font-size: 22px;
+    line-height: 182%;
+    text-transform: uppercase;
+    color: $color-text-light;
+  }
+  &__pagination {
+    display: flex;
+    gap: 25px;
+  }
+  &__control {
+    width: 16px;
+    height: 16px;
+    background-color: $color-text-light;
+    &_active {
+      background-color: $color-pagination;
+    }
+  }
+  &__arrow-wrapper {
+    display: flex;
+    gap: 20px;
+  }
+}
