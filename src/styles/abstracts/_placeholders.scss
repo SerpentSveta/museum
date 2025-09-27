@@ -1,0 +1,11 @@
+@use './variables' as *;
+
+%h3-underline {
+  content: '';
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 68%;
+  height: 2px;
+  background-color: $color-secondary;
+}

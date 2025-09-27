@@ -40,5 +40,8 @@
     "sass-loader": "^16.0.5",
     "stylelint": "^16.24.0",
     "stylelint-config-standard": "^39.0.0"
+  },
+  "dependencies": {
+    "modern-normalize": "^3.0.1"
   }
 }

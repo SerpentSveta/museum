@@ -1,5 +1,8 @@
-@use './base/normalize';
+@use '../../node_modules/modern-normalize/modern-normalize.css';
+@use './abstracts/variables';
 @use './base/typography';
+@use './abstracts/mixins';
+@use './abstracts/placeholders';
 @use './base/global';
 @use './layout/header';
 @use './components/logo';
@@ -7,3 +10,5 @@
 @use './layout/welcome';
 @use './components/slider';
 @use './components/buttons';
+@use './layout/visiting';
+@use './components/card';

@@ -1,0 +1,29 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/placeholders' as *;
+
+.card {
+  width: 100%;
+  max-width: 440px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  &__img {
+    margin-bottom: 15px;
+  }
+  &__title {
+    position: relative;
+    margin-bottom: 12px;
+    &::after {
+      @extend %h3-underline;
+    }
+  }
+  &__text {
+    margin: 0;
+    font-weight: 200;
+    font-size: 22px;
+    color: $color-text-dark;
+    &_small {
+      font-size: 18px;
+    }
+  }
+}
