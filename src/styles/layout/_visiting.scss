@@ -1,4 +1,5 @@
 @use '../abstracts/variables' as *;
+@use '../abstracts/placeholders' as *;
 
 .visiting {
   margin: 75px 0;
@@ -7,13 +8,7 @@
     margin-bottom: 103px;
     color: $color-title-light;
     &::after {
-      content: '';
-      position: absolute;
-      top: 115px;
-      left: 0;
-      width: 100%;
-      height: 3px;
-      background-color: $color-secondary;
+      @extend %h2-underline;
     }
   }
   &__cards-wrapper {

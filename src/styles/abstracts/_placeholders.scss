@@ -1,5 +1,15 @@
 @use './variables' as *;
 
+%h2-underline {
+  content: '';
+  position: absolute;
+  top: 115px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: $color-secondary;
+}
+
 %h3-underline {
   content: '';
   position: absolute;
