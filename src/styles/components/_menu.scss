@@ -3,8 +3,19 @@
 .menu {
   display: flex;
   gap: 55px;
-  font-weight: 200;
-  font-size: 22px;
-  letter-spacing: 0.09em;
-  color: $color-text-light;
+  li {
+    font-weight: 200;
+    font-size: 22px;
+    letter-spacing: 0.09em;
+    color: $color-text-light;
+    transition: all 0.3s ease-in;
+    &:hover {
+      color: $color-link-hover;
+      cursor: pointer;
+    }
+    &:active {
+      color: $color-link-active;
+      cursor: pointer;
+    }
+  }
 }

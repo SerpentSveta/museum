@@ -69,6 +69,11 @@
     width: 16px;
     height: 16px;
     background-color: $color-text-light;
+    transition: background-color 0.3s ease-in;
+    &:hover {
+      background-color: $color-pagination-hover;
+      cursor: pointer;
+    }
     &_active {
       background-color: $color-pagination;
     }
@@ -76,5 +81,26 @@
   &__arrow-wrapper {
     display: flex;
     gap: 20px;
+  }
+  &__arrow {
+    width: 30px;
+    height: 30px;
+    transition: background-color 0.3s ease;
+    &:hover {
+      background-color: $color-pagination-hover;
+      cursor: pointer;
+    }
+    &_left {
+      background-color: $color-background-light;
+      -webkit-mask: url('/assets/icons/arrow-left.svg') no-repeat center /
+        contain;
+      mask: url('/assets/icons/arrow-left.svg') no-repeat center / contain;
+    }
+    &_right {
+      background-color: $color-background-light;
+      -webkit-mask: url('/assets/icons/arrow-right.svg') no-repeat center /
+        contain;
+      mask: url('/assets/icons/arrow-right.svg') no-repeat center / contain;
+    }
   }
 }

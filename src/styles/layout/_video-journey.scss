@@ -1,0 +1,23 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/placeholders' as *;
+
+.video-journey {
+  margin: 75px 0;
+  &__header-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 115px;
+    margin-bottom: 75px;
+  }
+  &__title {
+    position: relative;
+    flex: 0 0 auto;
+    color: $color-title-light;
+  }
+  &__text {
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 1.75;
+    color: $color-text-dark;
+  }
+}

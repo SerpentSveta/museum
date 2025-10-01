@@ -306,10 +306,21 @@ ul {
 .menu {
   display: flex;
   gap: 55px;
+}
+.menu li {
   font-weight: 200;
   font-size: 22px;
   letter-spacing: 0.09em;
   color: hsl(0, 0%, 100%);
+  transition: all 0.3s ease-in;
+}
+.menu li:hover {
+  color: hsl(35, 22%, 51%);
+  cursor: pointer;
+}
+.menu li:active {
+  color: hsl(36, 22%, 41%);
+  cursor: pointer;
 }
 
 .welcome {
@@ -409,6 +420,11 @@ ul {
   width: 16px;
   height: 16px;
   background-color: hsl(0, 0%, 100%);
+  transition: background-color 0.3s ease-in;
+}
+.slider__control:hover {
+  background-color: hsl(35, 22%, 51%);
+  cursor: pointer;
 }
 .slider__control_active {
   background-color: hsl(35, 47%, 67%);
@@ -416,6 +432,25 @@ ul {
 .slider__arrow-wrapper {
   display: flex;
   gap: 20px;
+}
+.slider__arrow {
+  width: 30px;
+  height: 30px;
+  transition: background-color 0.3s ease;
+}
+.slider__arrow:hover {
+  background-color: hsl(35, 22%, 51%);
+  cursor: pointer;
+}
+.slider__arrow_left {
+  background-color: hsl(0, 0%, 100%);
+  -webkit-mask: url("/assets/icons/arrow-left.svg") no-repeat center/contain;
+  mask: url("/assets/icons/arrow-left.svg") no-repeat center/contain;
+}
+.slider__arrow_right {
+  background-color: hsl(0, 0%, 100%);
+  -webkit-mask: url("/assets/icons/arrow-right.svg") no-repeat center/contain;
+  mask: url("/assets/icons/arrow-right.svg") no-repeat center/contain;
 }
 
 .link-button {
@@ -428,6 +463,10 @@ ul {
   color: hsl(0, 0%, 100%);
   background-color: hsl(0, 88%, 24%);
   border-radius: 10px;
+  transition: background-color 0.3s ease-in;
+}
+.link-button:hover {
+  background-color: hsl(35, 22%, 51%);
 }
 
 .visiting {
@@ -491,8 +530,139 @@ ul {
   gap: 25px;
 }
 .explore__text {
+  margin: 0;
   font-weight: 300;
   font-size: 22px;
   line-height: 1.75;
   color: hsl(0, 0%, 100%);
+}
+
+.video-journey {
+  margin: 75px 0;
+}
+.video-journey__header-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 115px;
+  margin-bottom: 75px;
+}
+.video-journey__title {
+  position: relative;
+  flex: 0 0 auto;
+  color: hsl(35, 22%, 51%);
+}
+.video-journey__text {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 1.75;
+  color: hsl(0, 0%, 0%);
+}
+
+.video-pleer {
+  width: 100%;
+  max-width: 1440px;
+}
+.video-pleer img {
+  display: block;
+}
+.video-pleer__controls {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 27px 30px;
+  height: 85px;
+  background-color: hsl(0, 0%, 1%);
+}
+.video-pleer__progress {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  background: linear-gradient(to right, hsl(0, 88%, 24%) 0%, hsl(0, 88%, 24%) 40%, hsl(0, 0%, 77%) 40%, hsl(0, 0%, 77%) 100%);
+  height: 7px;
+  outline: none;
+  transition: background 450ms ease-in;
+}
+.video-pleer__progress_video {
+  width: 929px;
+}
+.video-pleer__progress::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  background-color: hsl(0, 0%, 100%);
+}
+.video-pleer__progress::-moz-range-thumb {
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  background-color: hsl(0, 0%, 100%);
+}
+.video-pleer__play {
+  cursor: pointer;
+}
+.video-pleer__volume {
+  cursor: pointer;
+}
+.video-pleer__fullscreen {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+.video-pleer__fullscreen svg path {
+  fill: hsl(0, 0%, 70%);
+  transition: fill 0.3s ease;
+}
+.video-pleer__fullscreen:hover svg path {
+  fill: hsl(0, 0%, 60%);
+}
+
+.video-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.video-block__pleers-wrapper {
+  display: flex;
+  gap: 42px;
+}
+.video-block__controls {
+  display: flex;
+  gap: 20px;
+}
+.video-block__control {
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  background-color: hsl(0, 0%, 60%);
+}
+.video-block__control:hover {
+  background-color: hsl(0, 88%, 24%);
+  cursor: pointer;
+}
+.video-block__control_active {
+  background-color: hsl(0, 0%, 20%);
+}
+.video-block__arrow {
+  width: 10px;
+  height: 12px;
+  transition: background-color 0.3s ease;
+}
+.video-block__arrow:hover {
+  background-color: hsl(0, 88%, 24%);
+  cursor: pointer;
+}
+.video-block__arrow_right {
+  background-color: hsl(0, 0%, 60%);
+  -webkit-mask: url("/assets/icons/arrow-right-video.svg");
+  mask: url("/assets/icons/arrow-right-video.svg");
+}
+.video-block__arrow_left {
+  background-color: hsl(0, 0%, 60%);
+  -webkit-mask: url("/assets/icons/arrow-left-video.svg");
+  mask: url("/assets/icons/arrow-left-video.svg");
 }/*# sourceMappingURL=main.css.map */
