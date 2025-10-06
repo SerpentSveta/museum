@@ -15,3 +15,15 @@
     background-color: $color-link-hover;
   }
 }
+
+.button {
+  padding: 12px 38px;
+  border: none;
+  border-radius: 2px;
+  background-color: $color-text-dark;
+  font-weight: 300;
+  font-size: 22px;
+  letter-spacing: 0.09em;
+  text-align: center;
+  color: $color-text-light;
+}

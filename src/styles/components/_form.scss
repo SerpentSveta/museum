@@ -1,0 +1,116 @@
+@use '../abstracts/variables' as *;
+
+.form {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-between;
+  &__ticket-type {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  &__inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  &__input-block {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    input[type='radio'] {
+      appearance: none;
+      background: none;
+      margin: 0;
+      display: block;
+      position: relative;
+      width: 17px;
+      height: 17px;
+      border: 2px solid $color-text-dark;
+      border-radius: 50%;
+      cursor: pointer;
+      outline: none;
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 7px;
+        height: 7px;
+        margin: auto;
+        inset: 0;
+        background-color: $color-text-dark;
+        border-radius: 50%;
+        transform: scale(0);
+        transition: transform 0.2s ease-in-out;
+      }
+
+      &:checked::before {
+        transform: scale(1);
+      }
+    }
+  }
+  &__input-text {
+    font-weight: 300;
+    font-size: 22px;
+    color: $color-text-dark;
+  }
+  &__amount {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 25px;
+    .form__title {
+      text-align: right;
+    }
+  }
+  &__amount-wrapper {
+    width: 150px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 10px;
+  }
+  &__amount-title {
+    align-self: flex-start;
+    padding-bottom: 5px;
+    font-weight: 300;
+    font-size: 22px;
+    color: $color-text-dark;
+  }
+  &__amount-button {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: $color-background-light;
+    border: none;
+    font-size: 32px;
+    text-align: center;
+    color: $color-text-dark;
+  }
+  &__amount-count {
+    border: none;
+  }
+  input[type='number']::-webkit-outer-spin-button,
+  input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  input[type='number'],
+  input[type='number']:hover,
+  input[type='number']:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+  }
+  &__amount-counter {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 3px solid $color-text-dark;
+  }
+  &__amount-count {
+    width: 24px;
+  }
+  &__button {
+    margin-top: 35px;
+  }
+}

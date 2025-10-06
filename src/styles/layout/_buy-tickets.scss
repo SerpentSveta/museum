@@ -1,15 +1,17 @@
 @use '../abstracts/variables' as *;
 @use '../abstracts/placeholders' as *;
 
-.visiting {
+.buy-tickets {
   margin: 75px 0;
   &__title {
     @extend %title-light-background;
   }
-  &__cards-wrapper {
+  &__wrapper {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    row-gap: 75px;
+    gap: 60px;
+    img {
+      max-width: 720px;
+    }
   }
 }

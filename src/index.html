@@ -238,6 +238,53 @@
         </div>
       </div>
     </section>
+    <section class="buy-tickets">
+      <div class="wrapper">
+        <h2 class="buy-tickets__title">Buy Tickets</h2>
+
+        <div class="buy-tickets__wrapper">
+          <img src="./assets/img/buy-tickets-img.jpg" alt="Pompeo Batoni">
+          <form class="form" name="buy-tickets">
+            <div class="form__ticket-type">
+              <h4 class="form__title">Ticket Type</h4>
+              <div class="form__inputs">
+                <label class="form__input-block">
+                  <input type="radio" name="ticket-type" value="permanent-exhibition" checked>
+                  <span class="form__input-text">Permanent exhibition</span>
+                </label>
+                <label class="form__input-block">
+                  <input type="radio" name="ticket-type" value="temporary-exhibition">
+                  <span class="form__input-text">Temporary exhibition</span>
+                </label>
+                <label class="form__input-block">
+                  <input type="radio" name="ticket-type" value="combined-admission">
+                  <span class="form__input-text">Combined Admission</span>
+                </label>
+              </div>
+            </div>
+            <div class="form__amount">
+              <h4 class="form__title">Amount</h4>
+              <div class="form__amount-wrapper">
+                <div class="form__amount-title">Basic 18+</div>
+                <div class="form__amount-counter">
+                  <button class="form__amount-button" id="basic-minus" type="button">–</button>
+                  <input type="number" class="form__amount-count" id="basic-count" value="1">
+                  <button class="form__amount-button" id="basic-plus" type="button">+</button>
+                </div>
+                <div class="form__amount-title">Senior 65+</div>
+                <div class="form__amount-counter">
+                  <button class="form__amount-button" id="senior-minus" type="button">–</button>
+                  <input type="number" class="form__amount-count" id="senior-count" value="1">
+                  <button class="form__amount-button" id="senior-plus" type="button">+</button>
+                </div>
+              </div>
+              <h4 class="form__title">Total €<span class="form__amount-total" id="total">220</span></h4>
+              <button class="button button_small form__button" type="submit" value="Submit">Buy Now</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
 </body>
 

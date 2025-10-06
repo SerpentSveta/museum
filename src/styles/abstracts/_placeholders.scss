@@ -19,3 +19,12 @@
   height: 2px;
   background-color: $color-secondary;
 }
+
+%title-light-background {
+  position: relative;
+  margin-bottom: 103px;
+  color: $color-title-light;
+  &::after {
+    @extend %h2-underline;
+  }
+}
