@@ -212,7 +212,7 @@ h4 {
   color: hsl(0, 0%, 0%);
 }
 
-.explore__title::after, .buy-tickets__title::after, .visiting__title::after {
+.explore__title::after, .contacts__title::after, .buy-tickets__title::after, .visiting__title::after {
   content: "";
   position: absolute;
   top: 115px;
@@ -232,7 +232,7 @@ h4 {
   background-color: hsl(0, 88%, 24%);
 }
 
-.buy-tickets__title, .visiting__title {
+.contacts__title, .buy-tickets__title, .visiting__title {
   position: relative;
   margin-bottom: 103px;
   color: hsl(35, 22%, 51%);
@@ -293,6 +293,16 @@ ul {
 
 .text__accent {
   color: hsl(35, 42%, 64%);
+}
+
+.parallax {
+  width: 100%;
+  height: 400px;
+  background-image: url("/assets/img/parallax.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 .header {
@@ -796,18 +806,22 @@ ul {
 .form__amount {
   display: flex;
   flex-direction: column;
+  align-items: end;
   gap: 25px;
 }
 .form__amount .form__title {
   text-align: right;
 }
 .form__amount-wrapper {
+  width: 150px;
   padding-bottom: 25px;
   display: flex;
   flex-direction: column;
+  align-items: end;
   gap: 10px;
 }
 .form__amount-title {
+  align-self: flex-start;
   padding-bottom: 5px;
   font-weight: 300;
   font-size: 22px;
@@ -849,4 +863,40 @@ ul {
 }
 .form__button {
   margin-top: 35px;
+}
+
+.contacts {
+  margin: 75px 0;
+}
+.contacts__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.contacts__wrapper img {
+  max-width: 960px;
+}
+.contacts__info {
+  width: 282px;
+}
+.contacts__info-title {
+  margin-bottom: 50px;
+  font-weight: 500;
+}
+.contacts__info-text {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.contacts__info-adress {
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: 300;
+  font-size: 22px;
+  color: hsl(0, 0%, 0%);
+}
+.contacts__info-adress:not(:first-child):hover {
+  color: hsl(35, 22%, 51%);
+}
+.contacts__info-adress:not(:first-child):active {
+  color: hsl(36, 22%, 41%);
 }/*# sourceMappingURL=main.css.map */

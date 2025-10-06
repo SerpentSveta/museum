@@ -1,0 +1,41 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/placeholders' as *;
+
+.contacts {
+  margin: 75px 0;
+  &__title {
+    @extend %title-light-background;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    img {
+      max-width: 960px;
+    }
+  }
+  &__info {
+    width: 282px;
+  }
+  &__info-title {
+    margin-bottom: 50px;
+    font-weight: 500;
+  }
+  &__info-text {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  &__info-adress {
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: 300;
+    font-size: 22px;
+    color: $color-text-dark;
+    &:not(:first-child):hover {
+      color: $color-link-hover;
+    }
+    &:not(:first-child):active {
+      color: $color-link-active;
+    }
+  }
+}
