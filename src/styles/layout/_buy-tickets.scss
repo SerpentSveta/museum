@@ -3,6 +3,7 @@
 
 .buy-tickets {
   margin: 75px 0;
+  background-color: $color-background-light;
   &__title {
     @extend %title-light-background;
   }

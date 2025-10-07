@@ -1,12 +1,12 @@
 @use '../abstracts/variables' as *;
-@use '../abstracts/mixins' as *;
+@use '../abstracts/placeholders' as *;
 
 .footer {
   padding: 75px 0 50px;
   background-color: $color-background-dark;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 57px;
   &__main-wrapper {
     display: flex;
     gap: 145px;
@@ -55,20 +55,19 @@
     display: flex;
     gap: 25px;
     align-items: end;
-    &__icon_youtube {
-      @include background-social-icon('../assets/icons/youtube.svg');
+    &__icon {
+      @extend %social-icon;
     }
-    &__icon_instagram {
-      @include background-social-icon('../assets/icons/instagram.svg');
-    }
-    &__icon_facebook {
-      @include background-social-icon('../assets/icons/facebook.svg');
-    }
-    &__icon_twitter {
-      @include background-social-icon('../assets/icons/twitter.svg');
-    }
-    &__icon_pinterest {
-      @include background-social-icon('../assets/icons/pinterest.svg');
+    &__img {
+      position: absolute;
+      inset: 0;
+      margin: auto;
+      background-color: $color-background-dark;
+      color: $color-background-light;
+      transition: color 0.3s ease-in-out;
+      &:hover {
+        color: $color-pagination-hover;
+      }
     }
   }
   &__credits {
@@ -77,6 +76,7 @@
     align-items: center;
   }
   &__credit {
+    margin: 0;
     font-weight: 200;
     font-size: 22px;
     line-height: 100%;
@@ -84,7 +84,7 @@
     color: $color-text-light;
     transition: all 0.3s ease-in-out;
     &:not(:first-child):hover {
-      color: hsl(35, 22%, 51%);
+      color: $color-pagination-hover;
       cursor: pointer;
     }
   }

@@ -10,17 +10,3 @@
     ),
     url($image-url);
 }
-
-@mixin background-social-icon($image-url) {
-  width: 48px;
-  height: 48px;
-  border: 1px solid $color-footer-line;
-  border-radius: 50px;
-  background-image: url($image-url);
-  background-repeat: no-repeat;
-  background-position: center center;
-  &:hover {
-    cursor: pointer;
-    border: 1px solid $color-pagination-hover;
-  }
-}
