@@ -24,14 +24,14 @@
             <h1 class="logo__text">Louvre</h1>
           </a>
         </div>
-        <nav class="header__navigaiton">
+        <nav class="header__navigaton" aria-label="Main navigation">
           <ul class="menu">
-            <li>Visiting</li>
-            <li>Explore</li>
-            <li>Video</li>
-            <li>Gallery</li>
-            <li>Tickets</li>
-            <li>Contacts</li>
+            <li><a href="#visiting">Visiting</a></li>
+            <li><a href="#explore">Explore</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#tickets">Tickets</a></li>
+            <li><a href="#contacts">Contacts</a></li>
           </ul>
         </nav>
       </div>
@@ -79,7 +79,7 @@
         </div>
       </div>
     </section>
-    <section class="visiting">
+    <section class="visiting" id="visiting">
       <div class="wrapper">
         <h2 class="visiting__title">Virtual tour</h2>
         <div class="visiting__cards-wrapper">
@@ -140,7 +140,7 @@
         </div>
       </div>
     </section>
-    <section class="explore">
+    <section class="explore" id="explore">
       <div class="wrapper">
         <div class="explore__wrapper">
           <div class="explore__content">
@@ -160,7 +160,7 @@
         </div>
       </div>
     </section>
-    <section class="video-journey">
+    <section class="video-journey" id="video">
       <div class="wrapper">
         <div class="video-journey__header-wrapper">
           <h2 class="video-journey__title">Video journey</h2>
@@ -213,7 +213,7 @@
         </div>
       </div>
     </section>
-    <section class="gallery">
+    <section class="gallery" id="gallery">
       <div class="wrapper">
         <h2 class="gallery__title">Art Gallery</h2>
         <div class="gallery__container">
@@ -238,7 +238,7 @@
         </div>
       </div>
     </section>
-    <section class="buy-tickets">
+    <section class="buy-tickets" id="tickets">
       <div class="wrapper">
         <h2 class="buy-tickets__title">Buy Tickets</h2>
 
@@ -286,7 +286,7 @@
       </div>
     </section>
     <div class="parallax"></div>
-    <section class="contacts">
+    <section class="contacts" id="contacts">
       <div class="wrapper">
         <h2 class="contacts__title">Contacts</h2>
         <div class="contacts__wrapper">
@@ -294,7 +294,8 @@
             <h4 class="contacts__info-title">Palais Royal <br> Musee du Louvre</h4>
             <div class="contacts__info-text">
               <p class="contacts__info-adress">address: 75001 Paris, France</p>
-              <a class="contacts__info-adress" href="tel:+330140205050">phone:&nbsp;+33(0)&nbsp;1&nbsp;40&nbsp;20&nbsp;50&nbsp;50</a>
+              <a class="contacts__info-adress"
+                href="tel:+330140205050">phone:&nbsp;+33(0)&nbsp;1&nbsp;40&nbsp;20&nbsp;50&nbsp;50</a>
               <a class="contacts__info-adress" href="mailto:info@louvre.fr">mail: info@louvre.fr</a>
             </div>
           </div>
@@ -304,7 +305,58 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="wrapper"></div>
+    <div class="wrapper">
+      <div class="footer__main">
+        <div class="footer__main-wrapper">
+          <div class="logo">
+            <a class="logo__link" href="#">
+              <img class="logo__img" src="./assets/logo.svg" alt="Louvre">
+              <h1 class="logo__text">Louvre</h1>
+            </a>
+          </div>
+          <nav class="footer__navigaton" aria-label="Footer navigation">
+            <ul class="menu footer__menu">
+              <li><a href="#visiting">Visiting</a></li>
+              <li><a href="#explore">Explore</a></li>
+              <li><a href="#video">Video</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#tickets">Tickets</a></li>
+              <li><a href="#contacts">Contacts</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="social-icons">
+          <a class="social-icons__link" href="https://www.youtube.com/user/louvre" target="_blank"
+            aria-label="Louvre YouTube">
+            <div class="social-icons__icon social-icons__icon_youtube"></div>
+          </a>
+          <a class="social-icons__link" href="https://www.instagram.com/museelouvre/" target="_blank"
+            aria-label="Louvre Instagram">
+            <div class="social-icons__icon social-icons__icon_instagram"></div>
+          </a>
+          <a class="social-icons__link" href="https://www.facebook.com/museedulouvre" target="_blank"
+            aria-label="Louvre Facebook">
+            <div class="social-icons__icon social-icons__icon_facebook"></div>
+          </a>
+          <a class="social-icons__link" href="http://twitter.com/museelouvre" target="_blank"
+            aria-label="Louvre Twitter">
+            <div class="social-icons__icon social-icons__icon_twitter"></div>
+          </a>
+          <a class="social-icons__link" href="https://www.pinterest.fr/museedulouvre/" target="_blank"
+            aria-label="Louvre Pinterest">
+            <div class="social-icons__icon social-icons__icon_pinterest"></div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__line"></div>
+    <div class="wrapper">
+      <div class="footer__credits">
+        <p class="footer__credit">© 2025</p>
+        <p class="footer__credit">The Rolling Scopes School</p>
+        <a class="footer__credit" href="https://github.com/serpentsveta" target="_blank">SerpentSveta</a>
+      </div>
+    </div>
   </footer>
 </body>
 

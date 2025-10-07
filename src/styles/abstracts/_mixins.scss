@@ -1,3 +1,5 @@
+@use '../abstracts/variables' as *;
+
 @mixin background-slider-welcome($image-url) {
   background:
     linear-gradient(
@@ -7,4 +9,18 @@
       rgba(0, 0, 0, 0) 30.73%
     ),
     url($image-url);
+}
+
+@mixin background-social-icon($image-url) {
+  width: 48px;
+  height: 48px;
+  border: 1px solid $color-footer-line;
+  border-radius: 50px;
+  background-image: url($image-url);
+  background-repeat: no-repeat;
+  background-position: center center;
+  &:hover {
+    cursor: pointer;
+    border: 1px solid $color-pagination-hover;
+  }
 }
