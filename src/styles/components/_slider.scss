@@ -52,6 +52,11 @@
     padding: 40px 74px;
     background-color: $color-background-dark;
     color: $color-text-light;
+    @media (max-width: 1260px) {
+      max-width: 700px;
+      padding: 40px 75px 40px 225px;
+      gap: 45px;
+    }
   }
   &__numbers {
     display: flex;
@@ -60,6 +65,10 @@
     line-height: 1.82;
     text-transform: uppercase;
     color: $color-text-light;
+    @media (max-width: 1260px) {
+      font-size: 20px;
+      line-height: 2;
+    }
   }
   &__pagination {
     display: flex;
@@ -76,6 +85,10 @@
     }
     &_active {
       background-color: $color-pagination;
+    }
+    @media (max-width: 1260px) {
+      width: 12px;
+      height: 12px;
     }
   }
   &__arrow-wrapper {

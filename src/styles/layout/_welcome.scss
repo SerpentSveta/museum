@@ -12,6 +12,9 @@
     z-index: 2;
     max-width: 600px;
     margin-top: 150px;
+    @media (max-width: 1260px) {
+      margin-top: 50px;
+    }
   }
   &__text {
     margin: 25px 0 0;
@@ -19,11 +22,18 @@
     font-size: 28px;
     letter-spacing: 0.07em;
     color: $color-text-light;
+    @media (max-width: 1260px) {
+      font-size: 24px;
+      letter-spacing: 0.08em;
+    }
   }
   .slider {
     margin-left: -160px;
   }
   .link-button {
     margin-top: 77px;
+    @media (max-width: 1260px) {
+      margin-top: 50px;
+    }
   }
 }

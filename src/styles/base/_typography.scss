@@ -17,6 +17,11 @@ h2 {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: $color-text-light;
+  @media (max-width: 1260px) {
+    font-size: 50px;
+    line-height: 1.8;
+    letter-spacing: 0.1em;
+  }
 }
 
 h3 {
