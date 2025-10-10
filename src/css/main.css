@@ -803,6 +803,12 @@ ul {
   gap: 115px;
   margin-bottom: 75px;
 }
+@media (max-width: 1100px) {
+  .video-journey__header-wrapper {
+    display: block;
+    margin-bottom: 30px;
+  }
+}
 .video-journey__title {
   position: relative;
   flex: 0 0 auto;
@@ -814,6 +820,11 @@ ul {
   font-size: 22px;
   line-height: 1.75;
   color: hsl(0, 0%, 0%);
+}
+@media (max-width: 1100px) {
+  .video-journey__text {
+    display: none;
+  }
 }
 
 .video-pleer {
@@ -831,6 +842,13 @@ ul {
   height: 85px;
   background-color: hsl(0, 0%, 1%);
 }
+@media (max-width: 1100px) {
+  .video-pleer__controls {
+    height: 60px;
+    padding: 15px 40px;
+    gap: 30px;
+  }
+}
 .video-pleer__progress {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -842,6 +860,11 @@ ul {
 }
 .video-pleer__progress_video {
   width: 929px;
+}
+@media (max-width: 1100px) {
+  .video-pleer__progress_video {
+    width: 564px;
+  }
 }
 .video-pleer__progress::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -864,6 +887,11 @@ ul {
 }
 .video-pleer__play {
   cursor: pointer;
+  width: 23px;
+}
+.video-pleer__play img {
+  width: 100%;
+  height: 100%;
 }
 .video-pleer__volume {
   cursor: pointer;
@@ -873,12 +901,22 @@ ul {
   height: 35px;
   cursor: pointer;
 }
+.video-pleer__fullscreen svg {
+  width: 100%;
+  height: 100%;
+}
 .video-pleer__fullscreen svg path {
   fill: hsl(0, 0%, 70%);
   transition: fill 0.3s ease;
 }
 .video-pleer__fullscreen:hover svg path {
   fill: hsl(0, 0%, 60%);
+}
+@media (max-width: 1100px) {
+  .video-pleer__fullscreen {
+    width: 26px;
+    height: 26px;
+  }
 }
 
 .video-block {
@@ -929,15 +967,26 @@ ul {
 }
 
 .gallery {
+  padding-bottom: 0;
   background-color: hsl(0, 0%, 1%);
 }
 .gallery__title {
   padding-bottom: 75px;
 }
+@media (max-width: 1100px) {
+  .gallery__title {
+    padding-bottom: 50px;
+  }
+}
 .gallery__container {
   position: relative;
   overflow-y: hidden;
   height: 1960px;
+}
+@media (max-width: 1100px) {
+  .gallery__container {
+    height: 1265px;
+  }
 }
 .gallery__inner-container {
   -moz-column-count: 3;
@@ -946,13 +995,14 @@ ul {
        column-gap: 36px;
 }
 .gallery__inner-container img {
-  max-width: 456px;
-  height: 100%;
-  margin-bottom: 18px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 24px;
 }
 .gallery__inner-container img:nth-child(1),
 .gallery__inner-container img:nth-child(11) {
-  margin-top: 50px;
+  padding-top: 50px;
 }
 .gallery__gradient-wrapper {
   position: absolute;

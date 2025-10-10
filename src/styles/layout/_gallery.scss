@@ -3,26 +3,34 @@
 
 .gallery {
   @extend %padding-sections;
+  padding-bottom: 0;
   background-color: $color-background-dark;
   &__title {
     padding-bottom: 75px;
+    @media (max-width: 1100px) {
+      padding-bottom: 50px;
+    }
   }
   &__container {
     position: relative;
     overflow-y: hidden;
     height: 1960px;
+    @media (max-width: 1100px) {
+      height: 1265px;
+    }
   }
   &__inner-container {
     column-count: 3;
     column-gap: 36px;
     img {
-      max-width: 456px;
-      height: 100%;
-      margin-bottom: 18px;
+      width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: 24px;
     }
     img:nth-child(1),
     img:nth-child(11) {
-      margin-top: 50px;
+      padding-top: 50px;
     }
   }
   &__gradient-wrapper {
