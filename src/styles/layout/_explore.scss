@@ -2,11 +2,18 @@
 @use '../abstracts/placeholders' as *;
 
 .explore {
-  padding: 75px 0 68px 0;
+  @extend %padding-sections;
+  padding-bottom: 68px;
   background-color: $color-background-dark;
+  @media (max-width: 1210px) {
+      padding-bottom: 60px;
+    }
   &__wrapper {
     display: flex;
     gap: 60px;
+    @media (max-width: 1210px) {
+      flex-direction: column;
+    }
   }
   &__title {
     position: relative;
@@ -14,16 +21,33 @@
     &::after {
       @extend %h2-underline;
     }
+    @media (max-width: 1210px) {
+      margin-bottom: 76px;
+    }
   }
   &__image {
     padding-top: 15px;
     width: 100%;
     max-width: 720px;
+    @media (max-width: 1480px) {
+      max-width: 600px;
+    }
+    @media (max-width: 1360px) {
+      max-width: 500px;
+    }
+    @media (max-width: 1210px) {
+      max-width: 720px;
+      padding-top: 0;
+      align-self: center;
+    }
   }
   &__text-wrapper {
     display: flex;
     flex-direction: column;
     gap: 25px;
+    @media (max-width: 1210px) {
+      gap: 4px;
+    }
   }
   &__text {
     margin: 0;
@@ -31,5 +55,13 @@
     font-size: 22px;
     line-height: 1.75;
     color: $color-text-light;
+    @media (max-width: 1210px) {
+      font-size: 20px;
+    }
+  }
+  &__text:nth-child(3) {
+    @media (max-width: 1210px) {
+      display: none;
+    }
   }
 }

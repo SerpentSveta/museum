@@ -57,6 +57,11 @@
       padding: 40px 75px 40px 225px;
       gap: 45px;
     }
+    @media (max-width: 980px) {
+      max-width: 800px;
+      padding: 40px 75px 40px 125px;
+      gap: 45px;
+    }
   }
   &__numbers {
     display: flex;

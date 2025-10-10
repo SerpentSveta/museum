@@ -1,9 +1,11 @@
 @use '../abstracts/variables' as *;
+@use '../abstracts/placeholders' as *;
 
 .gallery {
+  @extend %padding-sections;
   background-color: $color-background-dark;
   &__title {
-    padding: 75px 0;
+    padding-bottom: 75px;
   }
   &__container {
     position: relative;
