@@ -4,6 +4,13 @@
   display: flex;
   flex-basis: 100%;
   justify-content: space-between;
+  @media (max-width: 1290px) {
+    justify-content: center;
+  }
+  @media (max-width: 1100px) {
+    gap: 80px;
+    justify-content: start;
+  }
   &__ticket-type {
     display: flex;
     flex-direction: column;
@@ -62,8 +69,16 @@
     flex-direction: column;
     align-items: end;
     gap: 23px;
+    @media (max-width: 1290px) {
+      align-items: start;
+      justify-content: space-between;
+      gap: 25px;
+    }
     .form__title {
       text-align: right;
+      @media (max-width: 1290px) {
+        padding-bottom: 5px;
+      }
     }
   }
   &__amount-wrapper {
@@ -73,6 +88,11 @@
     flex-direction: column;
     align-items: end;
     gap: 10px;
+    @media (max-width: 1290px) {
+      width: 175px;
+      padding-bottom: 0;
+      align-items: start;
+    }
   }
   &__title_total {
     letter-spacing: 0.06em;
@@ -83,6 +103,9 @@
     font-weight: 300;
     font-size: 22px;
     color: $color-text-dark;
+    @media (max-width: 1290px) {
+      padding-bottom: 0;
+    }
   }
   &__amount-button {
     padding: 0;
@@ -113,7 +136,17 @@
     align-items: center;
     justify-content: space-around;
     border: 3px solid $color-text-dark;
+    @media (max-width: 1290px) {
+      width: 175px;
+      margin-bottom: 18px;
+    }
   }
+  &__amount-counter:last-of-type {
+    @media (max-width: 1290px) {
+      margin-bottom: 0;
+    }
+  }
+
   &__amount-count {
     width: 24px;
     padding: 10px 0;
