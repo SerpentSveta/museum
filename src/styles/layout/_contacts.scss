@@ -13,6 +13,9 @@
     img {
       width: 100%;
       max-width: 960px;
+      @media (max-width: 1300px) {
+        max-width: 694px;
+      }
     }
   }
   &__info {
@@ -21,11 +24,18 @@
   &__info-title {
     margin-bottom: 50px;
     font-weight: 500;
+    @media (max-width: 1300px) {
+      margin-bottom: 35px;
+      font-size: 24px;
+    }
   }
   &__info-text {
     display: flex;
     flex-direction: column;
     gap: 25px;
+    @media (max-width: 1300px) {
+      gap: 15px;
+    }
   }
   &__info-adress {
     margin: 0;
@@ -38,6 +48,9 @@
     }
     &:not(:first-child):active {
       color: $color-link-active;
+    }
+    @media (max-width: 1300px) {
+      font-size: 20px;
     }
   }
 }
