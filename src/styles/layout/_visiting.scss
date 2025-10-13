@@ -21,5 +21,9 @@
       column-gap: 0;
       row-gap: 60px;
     }
+     @media (max-width: 880px) {
+      padding: 0 28px;
+      row-gap: 36px;
+    }
   }
   }
