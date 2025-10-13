@@ -7,6 +7,10 @@
     position: relative;
     display: flex;
     justify-content: space-between;
+    @media (max-width: 880px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
   &__content {
     z-index: 2;
@@ -14,6 +18,15 @@
     margin-top: 150px;
     @media (max-width: 1260px) {
       margin-top: 50px;
+    }
+    @media (max-width: 880px) {
+      margin-top: 0;
+      text-align: center;
+    }
+  }
+  &__title {
+    @media (max-width: 880px) {
+      width: 328px;
     }
   }
   &__text {
@@ -26,14 +39,25 @@
       font-size: 24px;
       letter-spacing: 0.08em;
     }
+    @media (max-width: 880px) {
+      font-size: 20px;
+      letter-spacing: 0.1em;
+    }
   }
   .slider {
     margin-left: -160px;
+    @media (max-width: 880px) {
+      margin-top: 50px;
+      margin-left: 0;
+    }
   }
   .link-button {
     margin-top: 77px;
     @media (max-width: 1260px) {
       margin-top: 50px;
+    }
+    @media (max-width: 880px) {
+      display: none;
     }
   }
 }

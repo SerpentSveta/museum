@@ -6,6 +6,9 @@
   @media (max-width: 1260px) {
     padding: 49px 0 48px;
   }
+  @media (max-width: 880px) {
+    padding: 43px 0 34px;
+  }
   &__wrapper {
     display: flex;
     justify-content: space-between;

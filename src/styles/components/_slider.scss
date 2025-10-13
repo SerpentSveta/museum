@@ -62,6 +62,11 @@
       padding: 40px 75px 40px 125px;
       gap: 45px;
     }
+    @media (max-width: 880px) {
+      margin-top: 0;
+      align-self: center;
+      padding: 27px 0;
+    }
   }
   &__numbers {
     display: flex;
