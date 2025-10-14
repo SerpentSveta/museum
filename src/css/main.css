@@ -920,6 +920,11 @@ ul {
     margin-bottom: 30px;
   }
 }
+@media (max-width: 880px) {
+  .video-journey__header-wrapper {
+    margin-bottom: 20px;
+  }
+}
 .video-journey__title {
   position: relative;
   flex: 0 0 auto;
@@ -944,6 +949,22 @@ ul {
 }
 .video-pleer img {
   display: block;
+}
+.video-pleer__controls-wrapper_desktop {
+  display: block;
+}
+@media (max-width: 880px) {
+  .video-pleer__controls-wrapper_desktop {
+    display: none;
+  }
+}
+.video-pleer__controls-wrapper_mobile {
+  display: none;
+}
+@media (max-width: 880px) {
+  .video-pleer__controls-wrapper_mobile {
+    display: block;
+  }
 }
 .video-pleer__controls {
   display: flex;

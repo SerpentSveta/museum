@@ -4,6 +4,9 @@
 .video-journey {
   @extend %padding-sections;
   background-color: $color-background-light;
+  @media (max-width: 880px) {
+      padding-bottom: 75px;
+    }
   &__header-wrapper {
     display: flex;
     align-items: center;
@@ -12,6 +15,9 @@
     @media (max-width: 1100px) {
       display: block;
       margin-bottom: 30px;
+    }
+    @media (max-width: 880px) {
+      margin-bottom: 20px;
     }
   }
   &__title {
