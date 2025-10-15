@@ -66,4 +66,7 @@ ul {
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  @media (max-width: 880px) {
+    height: 300px;
+  }
 }
