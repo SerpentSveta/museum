@@ -4,6 +4,7 @@
 .buy-tickets {
   @extend %padding-sections;
   background-color: $color-background-light;
+  padding-bottom: 40px;
   &__title {
     @extend %title-light-background;
   }
@@ -13,7 +14,9 @@
     gap: 60px;
     @media (max-width: 1290px) {
       gap: 80px;
-      height: 440px;
+    }
+    @media (max-width: 1000px) {
+      gap: 60px;
     }
     img {
       width: 100%;
@@ -22,6 +25,10 @@
         min-width: 700px;
         height: 100%;
         object-fit: cover;
+      }
+      @media (max-width: 1000px) {
+        min-width: 444px;
+        height: 340px;
       }
     }
     form {

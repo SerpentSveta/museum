@@ -74,10 +74,16 @@
       justify-content: space-between;
       gap: 25px;
     }
+    @media (max-width: 1000px) {
+      gap: 39px;
+    }
     .form__title {
       text-align: right;
       @media (max-width: 1290px) {
         padding-bottom: 5px;
+      }
+      @media (max-width: 1000px) {
+        padding-bottom: 0;
       }
     }
   }
@@ -156,5 +162,8 @@
   }
   &__button {
     margin-top: 39px;
+    @media (max-width: 1000px) {
+      margin-top: 0;
+    }
   }
 }
