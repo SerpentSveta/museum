@@ -10,6 +10,9 @@
     @media (max-width: 1100px) {
       padding-bottom: 50px;
     }
+    @media (max-width: 880px) {
+      padding-bottom: 40px;
+    }
   }
   &__container {
     position: relative;
@@ -18,10 +21,17 @@
     @media (max-width: 1100px) {
       height: 1265px;
     }
+    @media (max-width: 880px) {
+      height: 1080px;
+    }
   }
   &__inner-container {
     column-count: 3;
     column-gap: 36px;
+    @media (max-width: 880px) {
+      column-count: 2;
+      column-gap: 24px;
+    }
     img {
       width: 100%;
       height: auto;

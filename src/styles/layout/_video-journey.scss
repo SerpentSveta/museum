@@ -5,8 +5,8 @@
   @extend %padding-sections;
   background-color: $color-background-light;
   @media (max-width: 880px) {
-      padding-bottom: 75px;
-    }
+    padding-bottom: 75px;
+  }
   &__header-wrapper {
     display: flex;
     align-items: center;
