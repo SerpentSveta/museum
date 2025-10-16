@@ -12,6 +12,11 @@
     padding-bottom: 50px;
     gap: 53px;
   }
+  @media (max-width: 970px) {
+    padding-top: 48px;
+    padding-bottom: 38px;
+    gap: 40px;
+  }
   &__main-wrapper {
     display: flex;
     gap: 145px;
@@ -21,13 +26,24 @@
     @media (max-width: 1100px) {
       gap: 40px;
     }
+    @media (max-width: 970px) {
+      gap: 148px;
+    }
   }
   &__main {
     display: flex;
     justify-content: space-between;
+    @media (max-width: 970px) {
+      flex-direction: column;
+      align-items: flex-end;
+    }
   }
   &__navigaton {
     max-width: 363px;
+    @media (max-width: 970px) {
+      max-width: 449px;
+      padding-top: 10px;
+    }
   }
   &__menu {
     flex-wrap: wrap;
@@ -35,6 +51,11 @@
     row-gap: 25px;
     text-align: left;
     justify-content: flex-start;
+    a {
+      @media (max-width: 970px) {
+        font-size: 18px;
+      }
+    }
     li {
       flex: 0 0 calc(50% - 75px);
     }
@@ -59,6 +80,9 @@
     @media (max-width: 1300px) {
       column-gap: 100px;
     }
+    @media (max-width: 970px) {
+      column-gap: 115px;
+    }
   }
   &__line {
     width: 100%;
@@ -69,6 +93,9 @@
     display: flex;
     gap: 25px;
     align-items: end;
+    @media (max-width: 970px) {
+      padding: 51px 89px 0 0;
+    }
     &__icon {
       @extend %social-icon;
     }
