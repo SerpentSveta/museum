@@ -1,4 +1,5 @@
 @use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
 
 .video-block {
   display: flex;
@@ -29,7 +30,7 @@
     height: 12px;
     border-radius: 6px;
     background-color: $color-video-control;
-    &:hover {
+    @include hover {
       background-color: $color-secondary;
       cursor: pointer;
     }
@@ -45,7 +46,7 @@
     width: 10px;
     height: 12px;
     transition: background-color 0.3s ease;
-    &:hover {
+    @include hover {
       background-color: $color-secondary;
       cursor: pointer;
     }

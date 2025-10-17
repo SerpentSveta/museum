@@ -89,7 +89,7 @@
     height: 16px;
     background-color: $color-text-light;
     transition: background-color 0.3s ease-in;
-    &:hover {
+    @include hover {
       background-color: $color-pagination-hover;
       cursor: pointer;
     }
@@ -109,7 +109,7 @@
     width: 30px;
     height: 30px;
     transition: background-color 0.3s ease;
-    &:hover {
+    @include hover {
       background-color: $color-pagination-hover;
       cursor: pointer;
     }

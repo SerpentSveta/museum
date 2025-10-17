@@ -1,5 +1,6 @@
 @use '../abstracts/variables' as *;
 @use '../abstracts/placeholders' as *;
+@use '../abstracts/mixins' as *;
 
 .contacts {
   @extend %padding-sections;
@@ -55,9 +56,11 @@
     font-weight: 300;
     font-size: 22px;
     color: $color-text-dark;
-    &:not(:first-child):hover {
-      color: $color-link-hover;
-    }
+    &:not(:first-child) {
+  @include hover {
+    color: $color-link-hover;
+  }
+}
     &:not(:first-child):active {
       color: $color-link-active;
     }

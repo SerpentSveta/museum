@@ -1,4 +1,5 @@
 @use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
 
 .video-pleer {
   position: relative;
@@ -117,8 +118,10 @@
       fill: hsl(0, 0%, 70%);
       transition: fill 0.3s ease;
     }
-    &:hover svg path {
-      fill: hsl(0, 0%, 60%);
+    @include hover {
+      svg path {
+        fill: hsl(0, 0%, 60%);
+      }
     }
     @media (max-width: 1100px) {
       width: 26px;

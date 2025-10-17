@@ -12,3 +12,11 @@
   background-size: cover;
   background-position: center;
 }
+
+@mixin hover {
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      @content;
+    }
+  }
+}

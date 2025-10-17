@@ -1,4 +1,5 @@
 @use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
 
 .link-button {
   display: inline-block;
@@ -11,7 +12,7 @@
   background-color: $color-secondary;
   border-radius: 10px;
   transition: background-color 0.3s ease-in;
-  &:hover {
+  @include hover {
     background-color: $color-link-hover;
   }
   @media (max-width: 1260px) {
