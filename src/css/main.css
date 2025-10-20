@@ -244,6 +244,12 @@ h3 {
     letter-spacing: 0.14em;
   }
 }
+@media (max-width: 480px) {
+  h3 {
+    font-size: 18px;
+    letter-spacing: 0.28em;
+  }
+}
 
 h4 {
   font-weight: 700;
@@ -284,6 +290,11 @@ h4 {
     top: 80px;
   }
 }
+@media (max-width: 420px) {
+  .explore__title::after, .contacts__title::after, .buy-tickets__title::after, .visiting__title::after {
+    top: 59px;
+  }
+}
 
 .card__title::after {
   content: "";
@@ -304,6 +315,11 @@ h4 {
   .card__title::after {
     width: 54%;
     top: 35px;
+  }
+}
+@media (max-width: 420px) {
+  .card__title::after {
+    top: 32px;
   }
 }
 
@@ -540,6 +556,11 @@ ul {
 @media (max-width: 880px) {
   .welcome__title {
     width: 328px;
+  }
+}
+@media (max-width: 480px) {
+  .welcome__title {
+    width: 248px;
   }
 }
 .welcome__text {
@@ -822,7 +843,7 @@ ul {
   -moz-column-gap: 60px;
        column-gap: 60px;
 }
-@media (max-width: 1480px) {
+@media (max-width: 1500px) {
   .visiting__cards-wrapper {
     justify-content: space-around;
   }
@@ -839,6 +860,17 @@ ul {
   .visiting__cards-wrapper {
     padding: 0 28px 40px;
     row-gap: 36px;
+  }
+}
+@media (max-width: 750px) {
+  .visiting__cards-wrapper {
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+}
+@media (max-width: 420px) {
+  .visiting__cards-wrapper {
+    row-gap: 40px;
   }
 }
 
@@ -864,6 +896,11 @@ ul {
     max-width: 280px;
   }
 }
+@media (max-width: 420px) {
+  .card {
+    gap: 9px;
+  }
+}
 .card__img {
   margin-bottom: 15px;
 }
@@ -874,6 +911,11 @@ ul {
 .card__title::after {
   transition: width 0.3s ease;
 }
+@media (max-width: 420px) {
+  .card__title {
+    margin-bottom: 15px;
+  }
+}
 .card__text {
   margin: 0;
   font-weight: 200;
@@ -883,6 +925,11 @@ ul {
 @media (max-width: 1100px) {
   .card__text {
     font-size: 20px;
+  }
+}
+@media (max-width: 420px) {
+  .card__text {
+    font-size: 16px;
   }
 }
 .card__text_small {

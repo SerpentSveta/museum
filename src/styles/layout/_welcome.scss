@@ -31,6 +31,9 @@
     @media (max-width: 880px) {
       width: 328px;
     }
+    @media (max-width: 480px) {
+      width: 248px;
+    }
   }
   &__text {
     margin: 25px 0 0;

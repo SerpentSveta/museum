@@ -53,6 +53,10 @@ h3 {
     font-size: 22px;
     letter-spacing: 0.14em;
   }
+  @media (max-width: 480px) {
+    font-size: 18px;
+    letter-spacing: 0.28em;
+  }
 }
 
 h4 {
