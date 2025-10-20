@@ -9,6 +9,9 @@
   @media (max-width: 880px) {
     padding: 43px 0 34px;
   }
+  @media (max-width: 420px) {
+    padding: 35px 0 39px;
+  }
   &__wrapper {
     display: flex;
     justify-content: space-between;

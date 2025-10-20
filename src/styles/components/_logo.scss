@@ -1,13 +1,16 @@
 @use '../abstracts/variables' as *;
 
 .logo {
-    &__link {
-        display: flex;
-        align-items: center;
-        gap: 25px;
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+  &__img {
+    width: 49px;
+    align-self: start;
+    @media (max-width: 420px) {
+      width: 29px;
     }
-    &__img {
-        width: 49px;
-        align-self: start;
-    }
+  }
 }
