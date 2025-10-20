@@ -118,7 +118,7 @@ button,
 [type=reset],
 [type=submit] {
   -webkit-appearance: button;
-  appearance: button; }
+}
 
 /**
 Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
@@ -148,7 +148,6 @@ Correct the cursor style of increment and decrement buttons in Safari.
 */
 [type=search] {
   -webkit-appearance: textfield; /* 1 */
-  appearance: textfield;
   outline-offset: -2px; /* 2 */
 }
 
@@ -187,6 +186,12 @@ h1 {
   color: hsl(0, 0%, 100%);
   font-weight: 400;
 }
+@media (max-width: 420px) {
+  h1 {
+    font-size: 16px;
+    letter-spacing: 0.31em;
+  }
+}
 
 h2 {
   font-family: "Forum", sans-serif;
@@ -209,6 +214,13 @@ h2 {
     font-size: 40px;
     line-height: 1.5;
     letter-spacing: 0.12em;
+  }
+}
+@media (max-width: 480px) {
+  h2 {
+    font-size: 28px;
+    line-height: 1.43;
+    letter-spacing: 0.18em;
   }
 }
 
@@ -412,6 +424,11 @@ ul {
     padding: 43px 0 34px;
   }
 }
+@media (max-width: 420px) {
+  .header {
+    padding: 35px 0 39px;
+  }
+}
 .header__wrapper {
   display: flex;
   justify-content: space-between;
@@ -455,6 +472,11 @@ ul {
 .logo__img {
   width: 49px;
   align-self: start;
+}
+@media (max-width: 420px) {
+  .logo__img {
+    width: 29px;
+  }
 }
 
 .menu {
@@ -510,6 +532,11 @@ ul {
     text-align: center;
   }
 }
+@media (max-width: 480px) {
+  .welcome__content {
+    margin-top: 5px;
+  }
+}
 @media (max-width: 880px) {
   .welcome__title {
     width: 328px;
@@ -534,6 +561,12 @@ ul {
     letter-spacing: 0.1em;
   }
 }
+@media (max-width: 480px) {
+  .welcome__text {
+    font-size: 16px;
+    letter-spacing: 0.12em;
+  }
+}
 .welcome .slider {
   margin-left: -160px;
 }
@@ -541,6 +574,11 @@ ul {
   .welcome .slider {
     margin-top: 50px;
     margin-left: 0;
+  }
+}
+@media (max-width: 480px) {
+  .welcome .slider {
+    margin-top: 47px;
   }
 }
 .welcome .link-button {
@@ -641,6 +679,12 @@ ul {
     padding: 27px 0 29px;
   }
 }
+@media (max-width: 480px) {
+  .slider__controls {
+    gap: 25px;
+    padding: 20px 0 20px;
+  }
+}
 .slider__numbers {
   display: flex;
   gap: 10px;
@@ -655,9 +699,21 @@ ul {
     line-height: 2;
   }
 }
+@media (max-width: 480px) {
+  .slider__numbers {
+    gap: 5px;
+    font-size: 16px;
+    line-height: 2.5;
+  }
+}
 .slider__pagination {
   display: flex;
   gap: 25px;
+}
+@media (max-width: 480px) {
+  .slider__pagination {
+    gap: 10px;
+  }
 }
 .slider__control {
   width: 16px;
@@ -678,6 +734,12 @@ ul {
   .slider__control {
     width: 12px;
     height: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .slider__control {
+    width: 7px;
+    height: 7px;
   }
 }
 .slider__arrow-wrapper {
@@ -704,6 +766,12 @@ ul {
   background-color: hsl(0, 0%, 100%);
   -webkit-mask: url("/assets/icons/arrow-right.svg") no-repeat center/contain;
   mask: url("/assets/icons/arrow-right.svg") no-repeat center/contain;
+}
+@media (max-width: 480px) {
+  .slider__arrow {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .link-button {
