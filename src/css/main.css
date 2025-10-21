@@ -558,7 +558,7 @@ ul {
     width: 328px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 350px) {
   .welcome__title {
     width: 248px;
   }
@@ -914,6 +914,11 @@ ul {
 @media (max-width: 420px) {
   .card__title {
     margin-bottom: 15px;
+  }
+}
+@media (max-width: 390px) {
+  .card__title_long::after {
+    top: 52px;
   }
 }
 .card__text {

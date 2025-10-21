@@ -35,6 +35,11 @@
     @media (max-width: 420px) {
       margin-bottom: 15px;
     }
+    &_long::after {
+      @media (max-width: 390px) {
+        top: 52px;
+      }
+    }
   }
   &__text {
     margin: 0;
