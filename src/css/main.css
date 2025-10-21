@@ -868,6 +868,11 @@ ul {
          column-gap: 30px;
   }
 }
+@media (max-width: 690px) {
+  .visiting__cards-wrapper {
+    padding-bottom: 0;
+  }
+}
 @media (max-width: 420px) {
   .visiting__cards-wrapper {
     row-gap: 40px;
@@ -960,6 +965,11 @@ ul {
     padding-bottom: 43px;
   }
 }
+@media (max-width: 420px) {
+  .explore {
+    padding-bottom: 34px;
+  }
+}
 .explore__wrapper {
   display: flex;
   gap: 60px;
@@ -981,6 +991,11 @@ ul {
 @media (max-width: 880px) {
   .explore__title {
     margin-bottom: 0;
+  }
+}
+@media (max-width: 340px) {
+  .explore__title {
+    letter-spacing: 0.12em;
   }
 }
 .explore__image {
