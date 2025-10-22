@@ -9,6 +9,9 @@
   @media (max-width: 880px) {
     gap: 21px;
   }
+  @media (max-width: 420px) {
+    gap: 38px;
+  }
   &__pleers-wrapper {
     display: flex;
     gap: 42px;
@@ -40,6 +43,10 @@
     @media (max-width: 880px) {
       width: 10px;
       height: 10px;
+    }
+    @media (max-width: 420px) {
+      width: 8px;
+      height: 8px;
     }
   }
   &__arrow {
