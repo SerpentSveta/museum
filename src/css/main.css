@@ -1066,6 +1066,11 @@ ul {
     padding-bottom: 75px;
   }
 }
+@media (max-width: 420px) {
+  .video-journey {
+    padding-bottom: 38px;
+  }
+}
 .video-journey__header-wrapper {
   display: flex;
   align-items: center;
@@ -1409,6 +1414,11 @@ ul {
 @media (max-width: 880px) {
   .gallery__container {
     height: 1080px;
+  }
+}
+@media (max-width: 420px) {
+  .gallery__container {
+    height: 634px;
   }
 }
 .gallery__inner-container {

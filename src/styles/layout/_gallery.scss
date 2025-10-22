@@ -24,6 +24,9 @@
     @media (max-width: 880px) {
       height: 1080px;
     }
+    @media (max-width: 420px) {
+      height: 634px;
+    }
   }
   &__inner-container {
     column-count: 3;
