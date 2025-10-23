@@ -7,6 +7,9 @@
   background-color: $color-background-light;
   &__title {
     @extend %title-light-background;
+    @media (max-width: 420px) {
+      margin-bottom: 64px;
+    }
   }
   &__wrapper {
     display: flex;
@@ -41,6 +44,9 @@
       margin-bottom: 44px;
       font-size: 20px;
     }
+    @media (max-width: 420px) {
+      font-size: 16px;
+    }
   }
   &__info-text {
     display: flex;
@@ -57,10 +63,10 @@
     font-size: 22px;
     color: $color-text-dark;
     &:not(:first-child) {
-  @include hover {
-    color: $color-link-hover;
-  }
-}
+      @include hover {
+        color: $color-link-hover;
+      }
+    }
     &:not(:first-child):active {
       color: $color-link-active;
     }
@@ -69,6 +75,9 @@
     }
     @media (max-width: 1000px) {
       font-size: 18px;
+    }
+    @media (max-width: 420px) {
+      font-size: 16px;
     }
   }
   &__map {

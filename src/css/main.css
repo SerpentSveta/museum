@@ -1764,6 +1764,11 @@ ul {
 .contacts {
   background-color: hsl(0, 0%, 100%);
 }
+@media (max-width: 420px) {
+  .contacts__title {
+    margin-bottom: 64px;
+  }
+}
 .contacts__wrapper {
   display: flex;
   justify-content: space-between;
@@ -1808,6 +1813,11 @@ ul {
     font-size: 20px;
   }
 }
+@media (max-width: 420px) {
+  .contacts__info-title {
+    font-size: 16px;
+  }
+}
 .contacts__info-text {
   display: flex;
   flex-direction: column;
@@ -1841,6 +1851,11 @@ ul {
 @media (max-width: 1000px) {
   .contacts__info-adress {
     font-size: 18px;
+  }
+}
+@media (max-width: 420px) {
+  .contacts__info-adress {
+    font-size: 16px;
   }
 }
 @media (max-width: 1000px) {
