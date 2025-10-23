@@ -256,6 +256,11 @@ h4 {
   font-size: 28px;
   color: hsl(0, 0%, 0%);
 }
+@media (max-width: 740px) {
+  h4 {
+    font-size: 16px;
+  }
+}
 
 .footer, .contacts, .buy-tickets, .gallery, .video-journey, .explore, .visiting {
   padding: 75px 0;
@@ -830,6 +835,14 @@ ul {
   letter-spacing: 0.09em;
   text-align: center;
   color: hsl(0, 0%, 100%);
+}
+@media (max-width: 740px) {
+  .button {
+    padding: 25px 49px;
+    font-size: 16px;
+    line-height: 0%;
+    letter-spacing: 0.12em;
+  }
 }
 
 .visiting {
@@ -1418,7 +1431,7 @@ ul {
 }
 @media (max-width: 420px) {
   .gallery__container {
-    height: 634px;
+    height: 635px;
   }
 }
 .gallery__inner-container {
@@ -1472,6 +1485,13 @@ ul {
     gap: 60px;
   }
 }
+@media (max-width: 740px) {
+  .buy-tickets__wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+}
 .buy-tickets__wrapper img {
   width: 100%;
   max-width: 720px;
@@ -1488,6 +1508,12 @@ ul {
   .buy-tickets__wrapper img {
     min-width: 444px;
     height: 340px;
+  }
+}
+@media (max-width: 740px) {
+  .buy-tickets__wrapper img {
+    min-width: 280px;
+    height: 160px;
   }
 }
 .buy-tickets__wrapper form {
@@ -1518,6 +1544,12 @@ ul {
   .form {
     gap: 80px;
     justify-content: start;
+  }
+}
+@media (max-width: 740px) {
+  .form {
+    justify-content: center;
+    align-items: center;
   }
 }
 .form__ticket-type {
@@ -1593,6 +1625,12 @@ ul {
     gap: 39px;
   }
 }
+@media (max-width: 740px) {
+  .form__amount {
+    align-items: center;
+    gap: 24px;
+  }
+}
 .form__amount .form__title {
   text-align: right;
 }
@@ -1604,6 +1642,16 @@ ul {
 @media (max-width: 1000px) {
   .form__amount .form__title {
     padding-bottom: 0;
+  }
+}
+@media (max-width: 740px) {
+  .form__amount .form__title {
+    text-align: center;
+  }
+}
+@media (max-width: 740px) {
+  .form__amount .form__title_total {
+    padding-top: 16px;
   }
 }
 .form__amount-wrapper {
@@ -1621,6 +1669,11 @@ ul {
     align-items: start;
   }
 }
+@media (max-width: 740px) {
+  .form__amount-wrapper {
+    gap: 15px;
+  }
+}
 .form__title_total {
   letter-spacing: 0.06em;
 }
@@ -1634,6 +1687,11 @@ ul {
 @media (max-width: 1290px) {
   .form__amount-title {
     padding-bottom: 0;
+  }
+}
+@media (max-width: 740px) {
+  .form__amount-title {
+    font-size: 16px;
   }
 }
 .form__amount-button {
@@ -1672,6 +1730,11 @@ ul {
     margin-bottom: 18px;
   }
 }
+@media (max-width: 740px) {
+  .form__amount-counter {
+    margin-bottom: 4px;
+  }
+}
 @media (max-width: 1290px) {
   .form__amount-counter:last-of-type {
     margin-bottom: 0;
@@ -1690,6 +1753,11 @@ ul {
 @media (max-width: 1000px) {
   .form__button {
     margin-top: 0;
+  }
+}
+@media (max-width: 740px) {
+  .form__button {
+    margin-top: 15px;
   }
 }
 

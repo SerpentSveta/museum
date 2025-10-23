@@ -12,6 +12,10 @@
     gap: 80px;
     justify-content: start;
   }
+  @media (max-width: 740px) {
+    justify-content: center;
+    align-items: center;
+  }
   &__ticket-type {
     display: flex;
     flex-direction: column;
@@ -78,6 +82,10 @@
     @media (max-width: 1000px) {
       gap: 39px;
     }
+    @media (max-width: 740px) {
+      align-items: center;
+      gap: 24px;
+    }
     .form__title {
       text-align: right;
       @media (max-width: 1290px) {
@@ -85,6 +93,14 @@
       }
       @media (max-width: 1000px) {
         padding-bottom: 0;
+      }
+      @media (max-width: 740px) {
+        text-align: center;
+      }
+      &_total {
+        @media (max-width: 740px) {
+          padding-top: 16px;
+        }
       }
     }
   }
@@ -100,6 +116,9 @@
       padding-bottom: 0;
       align-items: start;
     }
+    @media (max-width: 740px) {
+      gap: 15px;
+    }
   }
   &__title_total {
     letter-spacing: 0.06em;
@@ -112,6 +131,9 @@
     color: $color-text-dark;
     @media (max-width: 1290px) {
       padding-bottom: 0;
+    }
+    @media (max-width: 740px) {
+      font-size: 16px;
     }
   }
   &__amount-button {
@@ -145,6 +167,9 @@
       width: 175px;
       margin-bottom: 18px;
     }
+    @media (max-width: 740px) {
+      margin-bottom: 4px;
+    }
   }
   &__amount-counter:last-of-type {
     @media (max-width: 1290px) {
@@ -163,6 +188,9 @@
     margin-top: 39px;
     @media (max-width: 1000px) {
       margin-top: 0;
+    }
+    @media (max-width: 740px) {
+      margin-top: 15px;
     }
   }
 }
