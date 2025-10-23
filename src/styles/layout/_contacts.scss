@@ -5,6 +5,9 @@
 .contacts {
   @extend %padding-sections;
   background-color: $color-background-light;
+  @media (max-width: 420px) {
+    padding-bottom: 37px;
+  }
   &__title {
     @extend %title-light-background;
     @media (max-width: 420px) {
@@ -27,6 +30,9 @@
       @media (max-width: 1000px) {
         max-width: 728px;
         margin-bottom: 27px;
+      }
+      @media (max-width: 420px) {
+        margin-bottom: 0;
       }
     }
   }

@@ -18,6 +18,9 @@
     padding-bottom: 38px;
     gap: 40px;
   }
+  @media (max-width: 420px) {
+    padding-top: 41px;
+  }
   &__main-wrapper {
     display: flex;
     gap: 145px;
@@ -30,6 +33,10 @@
     @media (max-width: 970px) {
       gap: 148px;
     }
+    @media (max-width: 650px) {
+      gap: 30px;
+      flex-direction: column;
+    }
   }
   &__main {
     display: flex;
@@ -37,6 +44,9 @@
     @media (max-width: 970px) {
       flex-direction: column;
       align-items: flex-end;
+    }
+    @media (max-width: 650px) {
+      align-items: flex-start;
     }
   }
   &__navigaton {
@@ -51,29 +61,48 @@
     column-gap: 150px;
     row-gap: 25px;
     text-align: left;
-    justify-content: flex-start;
+    justify-content: space-between;
     a {
       @media (max-width: 970px) {
         font-size: 18px;
       }
+      @media (max-width: 650px) {
+        font-size: 16px;
+        letter-spacing: 0.12em;
+      }
     }
     li {
       flex: 0 0 calc(50% - 75px);
+      @media (max-width: 650px) {
+        flex: 0 0 auto;
+      }
     }
     li:nth-child(1) {
       order: 1;
     }
     li:nth-child(2) {
       order: 3;
+      @media (max-width: 650px) {
+        order: 4;
+      }
     }
     li:nth-child(3) {
       order: 5;
+      @media (max-width: 650px) {
+        order: 2;
+      }
     }
     li:nth-child(4) {
       order: 2;
+      @media (max-width: 650px) {
+        order: 5;
+      }
     }
     li:nth-child(5) {
       order: 4;
+      @media (max-width: 650px) {
+        order: 3;
+      }
     }
     li:nth-child(6) {
       order: 6;
@@ -83,6 +112,12 @@
     }
     @media (max-width: 970px) {
       column-gap: 115px;
+    }
+    @media (max-width: 650px) {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      row-gap: 31px;
+      column-gap: clamp(20px, calc(100vw - 332px), 88px);
     }
   }
   &__line {
@@ -96,6 +131,14 @@
     align-items: end;
     @media (max-width: 970px) {
       padding: 51px 89px 0 0;
+    }
+    @media (max-width: 760px) {
+      padding-right: 0;
+    }
+    @media (max-width: 650px) {
+      padding-top: 41px;
+      align-self: center;
+      gap: 5px;
     }
     &__icon {
       @extend %social-icon;
@@ -130,6 +173,16 @@
         color: $color-pagination-hover;
         cursor: pointer;
       }
+    }
+    &:nth-child(2) {
+      @media (max-width: 650px) {
+        display: none;
+      }
+    }
+    @media (max-width: 650px) {
+      font-size: 16px;
+      line-height: 1.37;
+      letter-spacing: 0.12em;
     }
   }
 }
