@@ -9,7 +9,7 @@
       rgba(0, 0, 0, 0) 30.73%
     ),
     url($image-url);
-  background-size: cover;
+  background-size: contain;
   background-position: center;
 }
 

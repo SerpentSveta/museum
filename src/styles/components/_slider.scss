@@ -6,19 +6,22 @@
   display: flex;
   flex-direction: column;
   transition: all 0.1s ease-in;
+  overflow: hidden;
   &__images {
     display: flex;
     max-width: 5000px;
+    transition: transform 0.5s ease-in;
   }
   &__slide {
     flex: 0 0 100%;
-    display: none;
     width: 100%;
     max-width: 1000px;
-    padding-top: 75%;
+    aspect-ratio: 4 / 3;
     border: 1px solid #000000;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
+    transition: opacity 0.5s ease-in;
+    opacity: 0;
     &_1 {
       @include background-slider-welcome('../assets/img/welcome-slider/1.jpg');
     }
@@ -40,19 +43,20 @@
       display: block;
     }
     &_active {
-      display: block;
+      opacity: 1;
     }
   }
   &__controls {
     display: flex;
-    align-items: center;
     align-self: flex-end;
+    align-items: center;
     gap: 55px;
     max-width: 600px;
     margin-top: -60px;
     padding: 40px 74px;
     background-color: $color-background-dark;
     color: $color-text-light;
+    z-index: 2;
     @media (max-width: 1260px) {
       max-width: 700px;
       padding: 40px 75px 40px 225px;
